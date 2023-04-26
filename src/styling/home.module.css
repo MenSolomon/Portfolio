@@ -1,0 +1,404 @@
+.sectionOne {
+  background-color: #1b1d26;
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  /* z-index: -10;  To show the M logo */
+}
+
+.container {
+  overflow-x: hidden;
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 610vh;
+}
+
+.navItems {
+  display: flex;
+  list-style-type: none;
+  color: #6c6c75;
+  position: relative;
+  top: 7vh;
+  left: 60vw;
+}
+
+.navItems li {
+  margin-right: 4vw;
+  font-weight: 700;
+}
+
+.navItems li img {
+  width: 20px;
+}
+
+.introName {
+  position: relative;
+  display: grid;
+  place-items: center;
+  top: 25vh;
+  color: #fdfdfe;
+}
+
+.introName h1 {
+  font-size: 3em;
+}
+
+.introName h4 {
+  font-size: 1.5em;
+  position: relative;
+  right: 8.5vw;
+  bottom: 9vh;
+  font-style: italic;
+}
+
+.sectionOne button {
+  position: relative;
+  left: 27.5vw;
+  top: 15vh;
+  height: 6.5vh;
+  width: 8vw;
+  font-size: 1em;
+  border-radius: 4px;
+  color: #fdfdfe;
+  background: linear-gradient(to right, #f43839, #ef5946);
+  font-weight: 700;
+  border: none;
+}
+
+.nameLogo {
+  width: 400px;
+  position: absolute;
+  z-index: -1;
+  bottom: 15vh;
+  left: 30vw;
+}
+
+.socials {
+  list-style-type: none;
+  position: relative;
+  bottom: 16vh;
+  float: right;
+  right: 2vw;
+}
+
+.socials img {
+  width: 50px;
+}
+
+.socials li {
+  margin-bottom: 2vh;
+}
+
+.sectionOneAndHalf {
+  position: relative;
+  top: 97vh;
+  background-color: #6c6c75;
+  height: 110vh;
+}
+
+.infoHeader {
+  position: relative;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  top: 10vh;
+  list-style-type: none;
+}
+
+.infoHeader li {
+  margin-bottom: -6vh;
+}
+
+.infoContent {
+  display: flex;
+  position: relative;
+  place-content: center;
+  top: 20vh;
+}
+
+.infoContent div {
+  /* border: 1px solid black; */
+  width: 40vw;
+  height: 60vh;
+  padding-left: 3vw;
+  padding-top: 5vh;
+}
+
+.infoContent div:nth-child(1) {
+  padding-left: 15vw;
+}
+
+.wrapButtons {
+  /* border: 1px solid black; */
+  width: 25vw;
+  height: 30vh;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+  position: relative;
+  right: 3vw;
+}
+.wrapButtons li button {
+  margin-right: 1vw;
+  width: 7vw;
+  height: 5.5vh;
+}
+
+.wrapButtons li {
+  margin-top: 1vh;
+}
+
+.sectionTwo {
+  position: relative;
+  top: 110vh;
+}
+
+.sectionTwo li:not(:nth-child(1)) {
+  margin-top: 25vh;
+}
+
+.sectionTwo ul {
+  list-style-type: none;
+}
+
+.sectionTwoHeader {
+  display: grid;
+  place-items: center;
+}
+
+.sectionTwoHeader h3 {
+  text-transform: uppercase;
+  color: #a69995;
+  font-size: 0.9em;
+}
+
+.sectionTwoHeader h1 {
+  color: rgba(0, 0, 0, 0.664);
+  position: relative;
+  bottom: 2vh;
+}
+
+.caseStudyOne,
+.caseStudyTwo {
+  width: 52vw;
+  /* background-color: black; */
+  height: 61vh;
+  position: relative;
+  left: 22vw;
+  background-size: 55vw;
+}
+
+.caseStudyOne button,
+.caseStudyTwo button {
+  position: relative;
+  left: 35.5vw;
+  top: 35vh;
+  height: 6.5vh;
+  width: 8vw;
+  font-size: 1em;
+  border-radius: 4px;
+  color: #fdfdfe;
+  background: linear-gradient(to right, #f43839, #ef5946);
+  font-weight: 700;
+  border: none;
+}
+
+.caseStudyOne h1 {
+  position: relative;
+  top: 20vh;
+  color: #fdfdfe;
+  font-size: 2em;
+}
+
+.path {
+  stroke-dasharray: 10;
+}
+
+.sectionTwo ul li div::before {
+  background-color: black;
+  transition: 300ms ease-in-out;
+}
+
+.sectionTwo ul li div:hover::before,
+.sectionTwo ul li div:focus::before {
+  transform: scaleX(1);
+}
+
+.buttonHover {
+  border: none;
+  color: white;
+  background-color: rgb(225, 0, 68);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 0 rgba(0, 0, 0, 0.664);
+  transition: ease-out 0.4s;
+  font-size: 2rem;
+  outline: none;
+  width: 52vw;
+}
+
+.buttonHover:hover {
+  box-shadow: inset 52vw 0 0 0 rgba(0, 0, 0, 0.664);
+}
+
+/* .buttonHover:hover */
+
+.event {
+  color: red;
+  font-size: 0.6em;
+  /* background-color: green; */
+  height: 10vh;
+
+  display: flex;
+  width: 10vw;
+  float: right;
+}
+
+/* .buttonHover:hover .event {
+  transition: ease-in-out 0.9s;
+  visibility: visible;
+  z-index: 10;
+  position: relative;
+  top: 8vh;
+} */
+
+.event img {
+  visibility: hidden;
+  position: relative;
+  top: 7vh;
+  width: 10vw;
+  height: 19vh;
+  right: 2vw;
+}
+
+.buttonHover:hover .event img {
+  animation: moveImage 0.6s forwards;
+  visibility: visible;
+  z-index: 10;
+}
+
+@keyframes moveImage {
+  100% {
+    top: -4vh;
+    z-index: 10;
+  }
+}
+
+.svgEl {
+  position: relative;
+  right: 50vw;
+  width: 30vw;
+  bottom: 40vh;
+}
+
+.svgPlace path {
+  stroke-dasharray: 0;
+  stroke-dashoffset: 0;
+  animation: dash 8s linear forwards;
+}
+
+/* .path {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: dash 5s linear alternate infinite;
+} */
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 100;
+  }
+
+  90% {
+    stroke-dasharray: 200;
+  }
+
+  99% {
+    stroke-dashoffset: 0;
+    stroke-dasharray: 50;
+  }
+
+  /* 100% {
+    stroke-dasharray: 0;
+  } */
+}
+
+.footer {
+  position: relative;
+  top: 130vh;
+  width: 100vw;
+  height: 19.5vh;
+  background-color: #1b1d26;
+  color: white;
+  padding-top: 5vh;
+}
+
+.footer p {
+  display: grid;
+  place-content: center;
+}
+
+.footer ul {
+  list-style-type: none;
+  display: flex;
+  place-content: center;
+}
+.footer ul li {
+  margin-right: 3vw;
+}
+
+/* .introName {
+  display: inline-block;
+}
+
+.introName h1 {
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typing 2s steps(19), cursor 0.4s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+@keyframes typing {
+  from {
+    width: 0;
+  }
+} */
+
+.line {
+  background-color: red;
+  width: 0.1vw;
+  height: 3vh;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 40vh;
+  left: 58vw;
+  animation: jeffery 0.6s infinite;
+  /* visibility: hidden; */
+}
+
+.line2 {
+  /* background-color: red; */
+  width: 0.1vw;
+  height: 3vh;
+  position: absolute;
+  display: grid;
+  place-items: center;
+  top: 40vh;
+  left: 58vw;
+
+  /* visibility: hidden; */
+}
+
+@keyframes jeffery {
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
