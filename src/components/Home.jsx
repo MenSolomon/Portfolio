@@ -77,7 +77,7 @@ const Home = () => {
           </h4>
         </div>
 
-        <button type="button"> About Me </button>
+        <div className={home.aboutMeButton}> About Me </div>
         {/* 
         <img src={nameLogo} className={home.nameLogo} /> */}
 

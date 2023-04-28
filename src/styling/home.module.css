@@ -60,23 +60,27 @@
 .introName h4 {
   font-size: 1.5em;
   position: relative;
-  right: 18vw;
+  right: 16vw;
   bottom: -1vh;
   font-style: italic;
 }
 
-.sectionOne button {
-  position: relative;
-  left: 5.5vw;
-  top: 28vh;
+.aboutMeButton {
+  position: absolute;
+  left: 10.5vw;
+  top: 36vh;
   height: 3.5vh;
-  width: 15vw;
+  min-width: 15vw;
+  max-width: 15vw;
   font-size: 0.5em;
   border-radius: 4px;
   color: #fdfdfe;
   background: linear-gradient(to right, #f43839, #ef5946);
   font-weight: 700;
   border: none;
+  padding-top: 10px;
+  text-align: center;
+  margin-inline: auto;
 }
 
 /* .nameLogo {
@@ -148,14 +152,15 @@
   width: 90vw;
   /* padding-left: 3vw; */
   padding: 5vh 0 0vw 1vw;
-  text-align: justify;
+  text-align: center;
   /* padding-top: 5vh; */
 }
 
 .infoContent div:nth-child(1) {
   margin-left: 4vw;
   height: 30vh;
-  font-size: 0.8em;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
 .infoContent div:nth-child(2) {
@@ -318,9 +323,9 @@
 .event img {
   visibility: hidden;
   position: relative;
-  top: 7vh;
-  width: 10vw;
-  height: 19vh;
+  top: 4vh;
+  width: 8vw;
+  height: 5vh;
   right: 2vw;
 }
 
@@ -332,7 +337,7 @@
 
 @keyframes moveImage {
   100% {
-    top: -4vh;
+    top: -2vh;
     z-index: 10;
   }
 }
@@ -457,7 +462,10 @@
   }
 } */
 
-@media (min-width: 560px) {
+/* @media (min-width: 770px) and (max-width: 1023px) {
+} */
+
+@media (orientation: landscape) {
   .sectionOne {
     background-color: #1b1d26;
     width: 100vw;
@@ -470,6 +478,7 @@
     overflow-x: hidden;
     font-family: Arial, Helvetica, sans-serif;
     min-height: 610vh;
+    width: 100vw;
   }
 
   .navItems {
@@ -507,23 +516,26 @@
   .introName h4 {
     font-size: 1.5em;
     position: relative;
-    right: 8.5vw;
-    bottom: 9vh;
+    right: 10vw;
+    bottom: -3vh;
     font-style: italic;
   }
 
-  .sectionOne button {
+  .aboutMeButton {
     position: absolute;
-    left: 27.5vw;
-    top: 60vh;
+    left: 26vw;
+    top: 50vh;
     height: 6.5vh;
-    width: 8vw;
+    min-width: 8vw;
     font-size: 1em;
     border-radius: 4px;
     color: #fdfdfe;
     background: linear-gradient(to right, #f43839, #ef5946);
     font-weight: 700;
     border: none;
+    text-align: center;
+    padding-top: 10px;
+    margin-inline: auto;
   }
 
   .nameLogo {
@@ -552,7 +564,7 @@
 
   .sectionOneAndHalf {
     position: relative;
-    top: 97vh;
+    top: 100vh;
     background-color: #6c6c75;
     height: 110vh;
   }
@@ -579,19 +591,22 @@
 
   .infoContent div {
     /* border: 1px solid black; */
-    width: 40vw;
+    width: 45vw;
     height: 60vh;
     padding-left: 3vw;
     padding-top: 5vh;
+    text-align: justify;
   }
 
   .infoContent div:nth-child(1) {
-    padding-left: 15vw;
+    padding-left: 1vw;
+    font-size: 1.3em;
+    line-height: 1.8;
   }
 
   .wrapButtons {
     /* border: 1px solid black; */
-    width: 25vw;
+    width: 33vw;
     height: 30vh;
     list-style-type: none;
     display: flex;
@@ -602,7 +617,7 @@
   }
   .wrapButtons li button {
     margin-right: 1vw;
-    width: 7vw;
+    width: 9vw;
     height: 5.5vh;
   }
 
@@ -640,7 +655,6 @@
     bottom: 2vh;
   }
 
-  .caseStudyOne,
   .caseStudyTwo {
     width: 52vw;
     /* background-color: black; */
@@ -648,6 +662,8 @@
     position: relative;
     left: 22vw;
     background-size: 55vw;
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 
   .caseStudyOne button,
