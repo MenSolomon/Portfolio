@@ -22,7 +22,7 @@ const Home = () => {
   const refer = useRef(null);
 
   useEffect(() => {
-    window.scrollTo(0, 0);
+    // window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -37,7 +37,10 @@ const Home = () => {
     >
       <section className={home.sectionOne}>
         <ul className={home.navItems}>
-          <Link to="/caseStudy1.sip&Savour">
+          <Link
+            to="/caseStudy1.sip&Savour"
+            style={{ textDecoration: "none", color: "#6c6c75" }}
+          >
             {" "}
             <li> Case Studies </li>{" "}
           </Link>
@@ -75,8 +78,8 @@ const Home = () => {
         </div>
 
         <button type="button"> About Me </button>
-
-        <img src={nameLogo} className={home.nameLogo} />
+        {/* 
+        <img src={nameLogo} className={home.nameLogo} /> */}
 
         <ul className={home.socials}>
           <li>
@@ -173,7 +176,7 @@ const Home = () => {
           <h1> Latest Works </h1>
         </div>
 
-        <ul>
+        <ul className={home.casesList}>
           <Link
             to="/caseStudy1.sip&Savour"
             // onClick={() => {

@@ -30,6 +30,34 @@ const CryptoApp = () => {
     setPageVisibility("visible");
   }, 3000);
 
+  // Guard close
+
+  // if (wifi) {
+  //   if (login) {
+  //     if (admin) {
+
+  //     } else {
+  //       ("not an admin");
+  //     }
+  //   } else {
+  //     ("not login in");
+  //   }
+  // } else {
+  //   ("no wifi");
+  // }
+
+  //   if(!wifi){
+  //     "no wifi"
+  //   }
+  //   if(login){
+  //  "not logged in"
+  //   }
+  //   if(!admin){
+  //     "not admin"
+  //   }
+
+  //   scrollElement();
+
   // const [text, setText] = useState("HYPERPLEXED");
 
   let role = "Front-End Developer";
